@@ -1,0 +1,23 @@
+#about{
+	background-color: rgba(23,28,40,255);
+	color: #fff;
+	padding-top: 15px;
+}
+
+  .about .row{
+	  margin-top: 10px;
+	  margin-bottom: 30px;
+  }
+
+  .about-us h1{
+	  text-align: center;
+  }
+  
+  #year, h4{
+      color:#ffb500;
+  }
+
+  .image-stl{
+    height: 18rem;
+    width: 28rem;
+  }

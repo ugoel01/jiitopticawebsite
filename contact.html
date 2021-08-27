@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JIIT OSA</title>
+
+  
+    <link rel="icon" type="image/png" href="img/osaicon.png"/>
+    
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="contact.css" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        //to be changed
+        emailjs.init("user_aELb48Z5FRDrg2Rllk93A");
+      })();
+      function sendMail() {
+        let email, message, Fname, Lname, phone, name;
+        Fname = document.getElementById("inputFname").value;
+        Lname = document.getElementById("inputLname").value;
+        email = document.getElementById("inputEmail").value;
+        phone = document.getElementById("inputPhone").value;
+        message = document.getElementById("inputMessage").value;
+        name = Fname + " " + Lname;
+        console.log(Fname, Lname, email, phone, message, name);
+        var contactParams = {
+          from_name: name,
+          from_email: email,
+          message: message,
+          to_name: "OSA CLUB JIIT",
+          phone_no: phone,
+          reply_to: email,
+         };
+        
+
+        if (!Fname || !Lname || !email || !phone || !message) {
+          alert("Please check your entries");
+          return false;
+        } else {
+          console.log(contactParams);
+          emailjs
+            .send("service_6pdqo77", "template_l4og9ea", contactParams)
+            .then(
+              function (response) {
+                console.log("SUCCESS!", response.status, response.text);
+                alert("Mail sent successfully");
+              },
+              function (error) {
+                console.log("FAILED...", error);
+                alert("Failed to connect");
+              }
+            );
+        }
+        document.getElementById("inputFname").value='';
+        document.getElementById("inputLname").value='';
+        document.getElementById("inputEmail").value='';
+        document.getElementById("inputPhone").value='';
+        document.getElementById("inputMessage").value='';
+      }
+    </script>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="contact-info">
+          <div>
+            <h2>Contact Info</h2>
+            <ul class="info">
+              <li>
+                <span><img src="img/location.png" alt="location img" /></span>
+                <span>JIIT, Noida, Sector-62</span>
+              </li>
+              <li>
+                <span><img src="img/mail.png" alt="mail img" /></span>
+                <span>jiit@mail.com</span>
+              </li>
+              <li>
+                <span><img src="img/call.png" alt="call img" /></span>
+                <span>98xxxxxxxx</span>
+              </li>
+            </ul>
+          </div>
+          <ul class="sci">
+            <li>
+              <a href="#"><img src="img/insta.png" alt="insta logo" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/fb.png" alt="fb logo" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/twitter.png" alt="twitter logo" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/Youtube.png" alt="discord logo" /></a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="ctform" class="contact-form">
+          <h2>Send a Message</h2>
+          <div class="form-box">
+            <div class="form-input w50">
+              <input type="text" id="inputFname" required name="fname" />
+              <span>First Name</span>
+            </div>
+            <div class="form-input w50">
+              <input type="text" id="inputLname" required name="lname" />
+              <span>Last Name</span>
+            </div>
+            <div class="form-input w50">
+              <input id="inputEmail" type="email" required name="email " />
+              <span>Email Address</span>
+            </div>
+            <div class="form-input w50">
+              <input id="inputPhone" type="text" required name="phone" />
+              <span>Mobile Number</span>
+            </div>
+            <div class="form-input w100">
+              <textarea id="inputMessage" required></textarea>
+              <span>Write your meassage here...</span>
+            </div>
+            <div class="form-input w100">
+              <input type="submit" onclick="sendMail()" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

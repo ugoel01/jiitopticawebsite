@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
+@media screen and (min-width: 767px) {
+
+body {
+    background: rgba(23, 28, 40, 255);
+}
+
+.row {
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+header {
+    height: 7rem;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header>h1{
+    text-align: center;
+    font-family: rampart;
+}
+
+.main-timeline {
+    height: 70vh;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 30px;
+}
+
+.main-timeline:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.main-timeline .timeline {
+    width: calc(50% + 58px);
+    border-right: 2px solid white;
+    float: left;
+    position: relative;
+    z-index: 1;
+}
+
+.main-timeline .timeline a {
+    text-decoration: none;
+
+}
+
+.timeline-year button {
+    border: none;
+    margin-top: 20px;
+    border-radius: 24px;
+    height: 40px;
+    width: 110px;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+
+.main-timeline .timeline-content {
+    color: white;
+    padding: 15px 10px 15px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 50px;
+    margin-top: 60vh;
+}
+
+.timeline-content .title li {
+    margin-left: -60px;
+    color: white;
+}
+
+.main-timeline .timeline-content:hover {
+    text-decoration: none;
+}
+
+.main-timeline .timeline-content:before {
+    content: "";
+    background: white;
+    width: 90%;
+    height: 20%;
+    position: absolute;
+    top: 0;
+
+    /* right: 50px; */
+}
+
+.main-timeline .timeline-year {
+    font-size: 35px;
+    line-height: 35px;
+    font-weight: 700;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    /* right: -15px; */
+}
+
+.main-timeline .title {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    margin: 0 0 0px;
+    margin-top: -600px;
+}
+
+
+
+.main-timeline .description {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* .main-timeline .timeline:nth-child(even) {
+    float: right;
+} */
+
+.main-timeline .timeline:nth-child(even):before {
+    right: auto;
+    left: auto;
+}
+
+.main-timeline .timeline:nth-child(even) .timeline-content {
+    padding: 15px 10px 15px 10px;
+    margin-top: -4px;
+
+
+}
+
+.main-timeline .timeline:nth-child(even) .timeline-content .title {
+    margin-top: 350px;
+
+
+
+}
+
+
+
+
+.main-timeline .timeline:nth-child(even) .timeline-content:before {
+    right: auto;
+    left: auto;
+}
+
+.main-timeline .timeline:nth-child(even) .timeline-year {
+    right: auto;
+    left: auto;
+}
+
+
+/* .main-timeline .timeline:nth-child(4n+2) .timeline-year button {
+    background: #ff3e7c;
+    background: white;
+} */
+
+.main-timeline .timeline:nth-child(4n+2) .timeline-content:before {
+    /* background: #ff3e7c; */
+    background: #ffb500;
+}
+
+.main-timeline .timeline:nth-child(4n+2) .timeline-year button {
+    /* background: #ff3e7c; */
+    background: white;
+}
+.main-timeline .timeline:nth-child(4n+2) .timeline-year button:hover {
+    /* background: #ff3e7c; */
+    background: #ffb500;
+    transform: scale(1.1);
+    transition:all .3s ease-in-out;
+}
+
+.main-timeline .timeline:nth-child(4n+4) .timeline-year button {
+    /* background: #ff3e7c; */
+    background: white;
+}
+.main-timeline .timeline:nth-child(4n+4) .timeline-year button:hover {
+    /* background: #ff3e7c; */
+    background: #ffb500;
+    transform: scale(1.1);
+    transition:all .3s ease-in-out;
+}
+
+.main-timeline .timeline:nth-child(4n+3) .timeline-content:before {
+    /* background: #2dd544; */
+    background: white;
+}
+
+
+
+.main-timeline .timeline:nth-child(4n+3) .timeline-year button {
+    /* background: #ff3e7c; */
+    background: #ffb500;
+}
+.main-timeline .timeline:nth-child(4n+3) .timeline-year button:hover {
+    /* background: #ff3e7c; */
+    background: white;
+    transform: scale(1.1);
+    transition:all .3s ease-in-out;
+}
+
+.main-timeline .timeline:nth-child(4n+1) .timeline-year button {
+    /* background: #ff3e7c; */
+    background: #ffb500;
+}
+.main-timeline .timeline:nth-child(4n+1) .timeline-year button:hover {
+    /* background: #ff3e7c; */
+    background: white;
+    transform: scale(1.1);
+    transition:all .3s ease-in-out;
+}
+
+
+.main-timeline .timeline:nth-child(4n+4) .timeline-content:before {
+    background: #ffb500;
+}
+
+   
+}
+
+
+@media screen and (max-width: 767px) {
+    body {
+        background: rgba(23, 28, 40, 255);
+        font-family: "DM Sans";
+    }
+    .title{
+        display: none;
+    }
+    header>h1{
+        text-align: center;
+        color: white;
+    }
+    .btn{
+        background: #ffb500;
+        width: 70%;
+        height: 10vh;
+        margin-left: 15%;
+        margin-right: auto;
+        margin-top: 40px;
+        border-radius: 10px;
+    }
+
+
+}

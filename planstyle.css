@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
+body {
+  /* background: #f6f5fa; */
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background: rgba(23,28,40,255);
+}
+
+.planning{
+    margin-top: 15px;
+}
+.planning h1{
+    color: white;
+    text-align: center;
+    font-family: Rampart;
+    font-weight: 900;
+  font-size: 60px;
+}
+.plan {
+  background: white;
+  padding: 50px;
+  color: rgba(23, 28, 40, 255);
+  transition: all 0.2s;
+  font-weight: 500;
+  border-radius: 20px;
+}
+
+.plan:hover {
+  background: rgb(29, 54, 112);
+  color: #ffffff;
+  border: 5px solid #ffb500;
+}
+
+.plan-heading {
+  font-size: 25px;
+}
+
+.plan-feature {
+  list-style: none;
+  padding: 0px;
+}
+
+/* :before, :hover, :after, @media, @import, @support */
+
+.plan-feature li:before {
+  content: "✓";
+  margin-right: 16px;
+}
+
+.plan-feature li {
+  margin-bottom: 16px;
+  display: flex;
+  /* justify-content: space-evenly; */
+}
+
+.plan-choose {
+  width: 90%;
+  background: #8645ff;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-size: 20px;
+  padding: 12px;
+  font-weight: bold;
+}
+
+.plan-header {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.plan-options {
+  margin-left: 10%;
+  margin-right: 10%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 3%;
+}
+/*  cal */
+
+@media (min-width:1050px) and (max-width: 1280px) {
+  .plan-options {
+    gap: 2%;
+    margin: 10%
+  }
+}
+
+@media (min-width:843px) and (max-width: 1050px) {
+  .plan-options {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10%;
+    margin: 15%;
+  }
+} 
+
+@media (min-width:320px) and (max-width: 843px) {
+  .plan-options {
+    grid-template-columns: 1fr;
+    margin: 15%;
+  }
+} 
+
+@media (max-width: 320px) {
+  .plan-options {
+    grid-template-columns: 1fr;
+    margin: 5%;
+  }
+}

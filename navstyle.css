@@ -269,21 +269,7 @@ a.nav-link {
 .glow-btn{
 box-shadow: 0 0 60px 2px #79b3eb, 0.5rem 0.5rem 30px #13092d;
 }
-.myBtn1 {
-  width: 30%;
-  background-color: rgb(88, 168, 243);
-  font-size: 15px;
-  margin-left: 25%;
-  margin-bottom: 30px;
-}
 
-#myBtn{
-  width: 30%;
-  background-color: rgb(88, 168, 243);
-  font-size: 15px;
-  margin-left: 50%;
-  margin-bottom: 30px;
-}
 @keyframes rubberBand {
   from {
     transform: scale3d(1, 1, 1);
@@ -791,7 +777,7 @@ box-shadow: 0 0 60px 2px #79b3eb, 0.5rem 0.5rem 30px #13092d;
     margin-left: 26%;
   }
   .about-us p{
-    margin-left: 1%;
+    margin-left: -3%;
     width:130%;
   }
 
@@ -803,17 +789,17 @@ box-shadow: 0 0 60px 2px #79b3eb, 0.5rem 0.5rem 30px #13092d;
   }
 
   .abimg, .abimg2{
-    margin-left: 18%;
+    margin-left: 10%;
     margin-top: -130px;
   }
   .abimg3 {
-    margin-left: 18%;
+    margin-left: 10%;
   }
 
 
   .about .row p{
-    margin-left: 12%;
-    width:110%;
+    margin-left: 1%;
+    width:130%;
     margin-top: -30px;
   }
   .img-fluid{
@@ -868,16 +854,13 @@ box-shadow: 0 0 60px 2px #79b3eb, 0.5rem 0.5rem 30px #13092d;
     height: auto;
     margin-left: 10%;
   }
-  #more {
-    display: none;
-  }
+ 
 
  
 }
 
 @media (min-width: 576px) {
   #myBtn {display: none;}
-  .myBtn1{display: none;}
   }
 
 /*mentor*/
@@ -987,7 +970,8 @@ box-shadow: 0 0 60px 2px #79b3eb, 0.5rem 0.5rem 30px #13092d;
     margin-left: 35%;
   } 
   .mentorcon{
-    margin-left: 10%;
+    margin-left: 1%;
+    width: 130%;
   }
   .mentor .row .content h2{
     margin-left: 40%;
@@ -1038,3 +1022,33 @@ box-shadow: 0 0 60px 2px #79b3eb, 0.5rem 0.5rem 30px #13092d;
     opacity: 1;
     visibility: visible;
   } */
+
+  .rm1{
+    width: 100%;
+    margin-top: -30px;
+  }
+  @media (min-width: 1024px){
+  .ReadMore{
+    display: none;
+  }
+}
+
+@media (max-width: 576px){
+  .more{
+    margin-left: 35%;
+  }
+  .abimg2{
+    display: none;
+  }
+  .ReadMore{
+    margin-left: 30%;
+  }
+}
+
+@media (max-width: 768px){
+  .show_info{
+    max-height: 100px;
+    overflow:hidden;
+  }
+}
+

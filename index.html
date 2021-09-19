@@ -93,6 +93,9 @@
 <body>
 
 
+    
+
+
   <div class="content">
     <!--NAVBAR STARTS-->
     <section>
@@ -122,7 +125,7 @@
               <a class="nav-link" href="gallery.html"><i class="bi bi-images"></i>Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#curteam"><i class="bi-people"></i>Team</a>
+              <a class="nav-link" href="all_teams.html"><i class="bi-people"></i>Team</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contactus"><i class="bi-telephone-inbound"></i>Contact Us</a>
@@ -184,23 +187,7 @@
 
     </div>
     
-    <script>
-         function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more"; 
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less"; 
-    moreText.style.display = "inline";
-  }
-}
-    </script>
+   
   </div>
     <!--HERO ENDS-->
     
@@ -221,13 +208,11 @@
           <br>
 
           <p>Established in September of 2017, the JIIT-OSA Student Chapter is Jaypee Institute of Information
-            Technology’s only internationally recognised scientific body.<span id="dots">..</span><span id="more"> We are a group of science enthusiasts that are
+            Technology’s only internationally recognised scientific body. We are a group of science enthusiasts that are
             hungry for impact. We conduct workshops on the latest skills in STEM, go for industry visits, compete in
-            hackathons, do some research and attend international conferences.</span></p>
-            <button onclick="myFunction()" class="myBtn1">Read more</button>
-          <br>
-          <br>
-
+            hackathons, do some research and attend international conferences.</p>
+        <br><br>
+         
 
         </div>
 
@@ -239,13 +224,13 @@
             data-aos="fade-up" data-aos-delay="100">
             <h3>Our <span class="phd">Community</span></h3>
             <br>
-            <p  id="about1" class="fst-italic">
+            <p  id="about1" class="fst-italic show_info">
               We welcome anyone interested in science & technology. Our team is committed to being a community of equal
-              access , free of discrimination, prejudice, or bias.<span id="dots">..</span><span id="more"> Furthermore, our most valuable members range from
+              access , free of discrimination, prejudice, or bias.Furthermore, our most valuable members range from
               people who were national science quiz champions in high school to people who had not written a single line
-              of code until they joined the team. No previous scientific exposure or programming experience is required.</span>
+              of code until they joined the team. No previous scientific exposure or programming experience is required.
             </p>
-            <button onclick="myFunction()" id="myBtn">Read more</button>
+            <button class="ReadMore" onclick="read_more(this,0)">Read More</button>
             <br>
             <br>
           </div>
@@ -257,15 +242,14 @@
             <h3>Life As A <span class="phd">Member</span></h3>
             <br>
 
-            <p class="fst-italic">
-              The JIIT-OSA Student Chapter is more than just a scientific community, it is a family .
-             . We learn and grow together<span id="dots">...</span><span id="more">,from learning new
+            <p class="fst-italic show_info">
+              The JIIT-OSA Student Chapter is more than just a scientific community, it is a family. We learn and grow together,from learning new
               scientific phenomena to creating computer simulations  with general meetings, workshops, and industry visits. 
              Our members have many opportunities to be involved beyond just workshops , including
               in the organization of our annual conference on Optics & Photonics, outreach
-              events to NGOs and other colleges, and travel opportunities at international conferences.</span>
+              events to NGOs and other colleges, and travel opportunities at international conferences.
             </p>
-            <button onclick="myFunction()" id="myBtn">Read more</button>
+            <button class="ReadMore" onclick="read_more(this,1)">Read More</button>
             <br>
             <br>
           </div>
@@ -283,15 +267,15 @@
             data-aos-delay="100">
             <h3>Life After <span class="phd">OSA</span></h3>
             <br>
-
-            <p class="fst-italic">
+          
+            <p class="fst-italic show_info">
               We are a very young organisation and hence have a small alumni. Our seniors have gone on to pursue a
-              variety of successes in their fields<span id="dots">...</span><span id="more">,including getting internships at Exicom Power Solutions, LG
+              variety of successes in their fields,including getting internships at Exicom Power Solutions, LG
               Electronics, NTPC, Tata Communications and Zomato. Our first batch of graduating members have been placed
               in Deloitte, Infosys, Cognizant and Tata Consultancy Services. Membership in the JIIT-OSA Student Chapter
-              is for life.</span>
+              is for life.
             </p>
-            <button onclick="myFunction()" id="myBtn">Read more</button>
+            <button class="ReadMore" onclick="read_more(this,2)">Read More</button>
             <br>
             <br>
           </div>
@@ -356,10 +340,10 @@
           <h2>Biog<span class="phd">raphy</span></h2>
           <br>
 
-          <p class="mentorcon fst-italic">
+          <p class="mentorcon fst-italic show_info">
             Dr. Anuraj Panwar is currently an Assistant Professor (Senior Grade) in Department of Physics and Material
             Science, JIIT Noida. He did M.Sc. (2002) and M.Phil. (2004) from Institute of Advanced Studies, CCS
-            University Meerut.<span id="dots">..</span><span id="more">In 2010 he had completed Ph.D. from IIT Delhi. From Jan 2010 - Jan 2012, he worked as
+            University Meerut.<span id="dots4">..</span><span id="more4">In 2010 he had completed Ph.D. from IIT Delhi. From Jan 2010 - Jan 2012, he worked as
             Research Associate with Prof. Karl-Peter Marzlin at St. Francis Xavier University, NS, Canada. In mid Jan
             2012 he moved to Pohang University of Science and Technology, Pohang, South Korea. Since then (Jan 2012 to
             Aug 2017) he was the post doctoral research associate there and actively involved in research with Prof.
@@ -367,7 +351,7 @@
             M. Ryu. He is a member of Plasma Science Society India (PSSI) and Association of Asia Pacific Physical
             Societies – Division of Plasma Physics, (AAPPS-DPP).</span>
           </p>
-          <button onclick="myFunction()" id="myBtn">Read more</button>
+          <button class="ReadMore rmm" onclick="read_more(this,3)">Read More</button>
           <br><br>
 
         </div>
@@ -377,20 +361,20 @@
 
     <!--OUR MENTOR -->
 
-    <section class="toim">
-      <!--TEAM-->
+    <!-- <section class="toim">
+      
       <div data-aos="fade-up" data-aos-delay="50">
         <h1 class="h1team" id="curteam">
           <span class="pg">MEET
             <span class="ug">OUR TEAM</span></span>
         </h1>
       </div>
-      <!--main container-->
+      
       <div class="main-team">
-        <!--carousel-->
+        
         <div class="carousel " data-ride="carousel"  data-interval="false" id="team">
           
-          <!-- navbar -->
+          
           <div class="controls-top">
             <div class="row">
               <div class="col"></div>
@@ -406,16 +390,16 @@
             </div>
           </div><br><br>
           <div class="carousel-inner innerc">
-            <!--item 1. team heads-->
+            
             <div class="carousel-item active">
               <div>
                 <h1>CHAPTER OFFICERS</h1>
               </div>
-              <!--container for image boxes-->
+              
               <div class="team-container">
-                <!--row1-->
+                
                 <div class="row">
-                  <!-- col1 -->
+                  
                   <div class="col">
                     <div class="imagebox">
                       <img src="img1/ayush.jfif">
@@ -435,7 +419,7 @@
                       </div>
                     </div>
                   </div>
-                  <!-- col2 -->
+                  
                   <div class="col">
                     <div class="imagebox">
                       <img src="img1/Anshika.jpeg">
@@ -454,9 +438,9 @@
                     </div>
                   </div>
                 </div>
-                <!--row1 closed-->
+            
                 <div class="row">
-                  <!-- col3 -->
+              
                   <div class="col">
                     <div class="imagebox">
                       <img src="img1/Ishan.jpg">
@@ -473,7 +457,7 @@
                       </div>
                     </div>
                   </div>
-                  <!-- col4 -->
+                
                   <div class="col">
                     <div class="imagebox">
                       <img src="img1/Sparsh.jpg">
@@ -490,19 +474,19 @@
                         </ul>
                       </div>
                     </div>
-                  </div> <!-- col4 closed-->
-                </div> <!-- row2 closed-->
-              </div> <!-- container closed-->
-            </div> <!-- item 1 closed-->
-            <!-- item 2. department heads -->
+                  </div>
+                </div>
+              </div> 
+            </div>
+         
             <div class="carousel-item">
               <div>
                 <h1> DEPARTMENT HEADS</h1>
               </div>
               <div class="team-container con1">
-                <!-- row1 -->
+          
                 <div class="row">
-                  <!-- col1 -->
+               
                   <div class="col col1">
                     <div class="imagebox">
                       <img src="img1/Aayush.jpg">
@@ -519,7 +503,7 @@
                       </div>
                     </div>
                   </div>
-                  <!-- col2 -->
+            
                   <div class="col col1">
                     <div class="imagebox">
                       <img src="img1/Tanmay.jpg">
@@ -536,7 +520,7 @@
                       </div>
                     </div>
                   </div>
-                  <!-- col3 -->
+             
                   <div class="col col1">
                     <div class="imagebox">
                       <img src="img1/Roshni.jpg">
@@ -552,7 +536,7 @@
                       </div>
                     </div>
                   </div>
-                  <!-- col4 -->
+                 
                   <div class="col col1">
                     <div class="imagebox">
                       <img src="img1/Shweta.jpeg">
@@ -568,7 +552,7 @@
                       </div>
                     </div>
                   </div>
-                  <!-- col5 -->
+           
                   <div class="col col1">
                     <div class="imagebox">
                       <img src="img1/Digvijay.jpg">
@@ -586,9 +570,9 @@
                     </div>
                   </div>
                 </div>
-                <!-- row2 -->
+             
                 <div class="row">
-                  <!-- col1 -->
+               
                   <div class="col col1">
                     <div class="imagebox">
                       <img src="img1/Ritawari.jpg">
@@ -605,7 +589,7 @@
                       </div>
                     </div>
                   </div>
-                  <!-- col2 -->
+               
                   <div class="col col1">
                     <div class="imagebox">
                       <img src="img1/Harit.jpeg">
@@ -620,7 +604,7 @@
                       </div>
                     </div>
                   </div>
-                  <!-- col3 -->
+                  
                   <div class="col col1">
                     <div class="imagebox">
                       <img src="img1/Ananya.jpeg">
@@ -636,7 +620,7 @@
                       </div>
                     </div>
                   </div>
-                  <!-- col4 -->
+                  
                   <div class="col col1">
                     <div class="imagebox">
                       <img src="img1/Abhishek.jfif">
@@ -651,8 +635,7 @@
                       </div>
                     </div>
                   </div>
-                <!--col4 closed-->
-                  <!--somesh-->
+               
                   <div class="col col1">
                     <div class="imagebox">
                       <img src="img1/somesh.jfif">
@@ -669,33 +652,33 @@
                   </div>
                   
                 </div>
-                <!--row2 closed-->
+               
               </div>
-              <!--team container closed-->
+              
             </div>
-            <!-- item 3. members -->
+           
             <div class="carousel-item">
               <div>
                 <h1>MEMBERS</h1>
               </div>
               <div class="team-container">
-                <!-- row1 -->
+              
                 <div class="row">
-                  <!-- col1 -->
+                
                   <div class="col">
                     <div class="imagebox">
-                      <img src="https://drive.google.com/uc?id=1pJgFCvYeoBqjdEpGIDRUJuGZ8wsI68L3">
+                      <img src="https://drive.google.com/uc?id=1HOuUM8UEUiLnEd_YPVZdaT98znoKyyMW">
                       <div class="team-content">
-                        <h3>Naman Jain</h3>
+                        <h3>Naman Gupta</h3>
                         <ul>
-                          <li><a href="https://www.instagram.com/namanjaiinn/"><i class="bi bi-instagram"></i></a></li>
-                          <li><a href="https://www.linkedin.com/in/naman-jain-18b3191b4"><i
+                          <li><a href="https://www.instagram.com/nemo_gpt/"><i class="bi bi-instagram"></i></a></li>
+                          <li><a href="https://www.linkedin.com/in/naman-gupta-3474151b7/"><i
                                 class="bi bi-linkedin"></i></a></li>
                         </ul>
                       </div>
                     </div>
                   </div>
-                  <!-- col2 -->
+                
                   <div class="col">
                     <div class="imagebox">
                       <img src="https://drive.google.com/uc?id=1rl7bIiMphZbujKILwwGNsQoirrSDrrfy">
@@ -710,7 +693,7 @@
                       </div>
                     </div>
                   </div>
-                  <!-- col3 -->
+                
                   <div class="col">
                     <div class="imagebox">
                       <img src="https://drive.google.com/uc?id=1geAZy4qhKNf0siTZ3PB2kL9wHV09bvdF">
@@ -724,8 +707,8 @@
                         </ul>
                       </div>
                     </div>
-                  </div> <!-- col3 closed-->
-                  <!-- col4 -->
+                  </div> 
+                
                   <div class="col">
                     <div class="imagebox">
                       <img src="https://drive.google.com/uc?id=1Z29l-9oC55k2AWNUgyIUnE2eyxuSYbA_">
@@ -738,26 +721,26 @@
                         </ul>
                       </div>
                     </div>
-                  </div> <!-- col4 closed-->
+                  </div> 
                 </div>
-                <!--row1 closed-->
+              
 
               </div>
-              <!--team container 3 closed-->
+             
             </div>
-            <!-- carousel item 3. closed above -->
+           
           </div>
-          <!--carousel inner closed-->
+         
         </div>
-        <!--carousel closed-->
+     
        
 
       </div>
-      <!--TEAM-->
-    </section>
+     
+    </section> -->
     <!-- button -->
-     <a href="all_teams.html" class="btn-flip bb glow-btn" data-back="Teams" data-front="Yearwise"></a>
-    <br><br><br> 
+     <!-- <a href="all_teams.html" class="btn-flip bb glow-btn" data-back="Teams" data-front="Yearwise"></a>
+    <br><br><br>  -->
 
     <!-- <section class="calendarsec">
       <div class="timeh">
@@ -877,17 +860,18 @@
               </li>
               <li>
                 <span><img src="img1/mail.png" alt="mail img" /></span>
-                <span>contact@jiitosachapter.in<br> jiitosastudentchapter@gmail.com</span>
+                <span><a href = "mailto:contact@jiitosachapter.in?subject = Feedback&body = Message">contact@jiitosachapter.in</a><br>
+                  <a href = "mailto:jiitosastudentchapter@gmail.com?subject = Feedback&body = Message"> jiitosastudentchapter@gmail.com</a></span>
               </li>
               <li>
                 <span><img src="img1/call.png" alt="call img" /></span>
-                <span>+91 82871 88554 <br> +91 73909 41228</span>
+                 <span><a href="tel:+918287188554">+91 82871 88554</a> <a href="tel:+917390941228"><br> +91 73909 41228</a></span>
               </li>
             </ul>
           </div>
           <ul class="sci">
             <li>
-              <a href="#"><img src="img1/insta.png" alt="insta logo" /></a>
+              <a href="https://www.instagram.com/jiitosachapter/"><img src="img1/insta.png" alt="insta logo" /></a>
             </li>
             <li>
               <a href="#"><img src="img1/fb.png" alt="fb logo" /></a>
@@ -968,6 +952,23 @@
    
     })
   </script>
+  <script>
+    var pes = document.getElementsByClassName("show_info");
+    function read_more(button,index){
+      pes[index].style.maxHeight = "fit-content";
+      button.innerHTML = "Read less";
+      button.setAttribute("onclick","read_less(this,"+index+")");
+    }
+
+    function read_less(button,index){
+      pes[index].style.maxHeight = "100px";
+      button.innerHTML = "Read More";
+      button.setAttribute("onclick","read_more(this,"+index+")");
+    }
+  </script>
+
+
+
   
 
 </body>

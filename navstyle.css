@@ -1033,6 +1033,13 @@ box-shadow: 0 0 60px 2px #79b3eb, 0.5rem 0.5rem 30px #13092d;
   }
 }
 
+@media (max-width: 768px){
+  .ReadMore{
+    width:20%;
+    margin-left: 40%;
+  }
+}
+
 @media (max-width: 576px){
   .more{
     margin-left: 35%;
@@ -1041,7 +1048,8 @@ box-shadow: 0 0 60px 2px #79b3eb, 0.5rem 0.5rem 30px #13092d;
     display: none;
   }
   .ReadMore{
-    margin-left: 30%;
+    margin-left: 50%;
+    width: 30%;
   }
 }
 

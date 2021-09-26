@@ -1,0 +1,191 @@
+ @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
+ body {
+   /* background: #f6f5fa; */
+   display: grid;
+   place-items: center;
+   height: 100vh;
+   background: rgba(23, 28, 40, 255);
+ }
+
+ .planning {
+   margin-top: 5%;
+   background-color: rgba(23, 28, 40, 255);
+   padding-bottom: 5%;
+ }
+
+ .planning h1 {
+   color: white;
+   text-align: center;
+   font-weight: 900;
+   font-size: 60px;
+   font: 50px;
+   position: relative;
+   text-align: center;
+   text-transform: uppercase;
+   z-index: 1;
+   margin-top: 15vh;
+ }
+
+
+
+ .planning h1:before {
+   border-top: 2px solid #dfdfdf;
+   content: "";
+   margin: 0 auto;
+   /* this centers the line to the full width specified */
+   position: absolute;
+   /* positioning must be absolute here, and relative pos
+  itioning must be applied to the parent */
+   top: 30px;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   width: 30%;
+   z-index: -1;
+ }
+
+ .planning h1 span {
+   /* to hide the lines from behind the text, you have to set the background 
+  color the same as the container */
+   background: rgba(23, 28, 40, 255);
+   padding: 0 15px;
+ }
+
+ @media (max-width: 713px) {
+   h2:before {
+     width: 50%;
+   }
+ }
+
+ @media (max-width: 500px) {
+
+   h2:before {
+     width: 50%;
+   }
+ }
+
+ .plan {
+   background: white;
+   padding: 50px;
+   color: white;
+   transition: all 0.2s;
+   font-weight: 500;
+   border-radius: 20px;
+   background-color: rgb(20, 91, 172);
+   font-size: 17px;
+   ;
+ }
+
+ .plan:hover {
+   background: white;
+
+   color: black;
+   transition: all 0.5s;
+   transform: scale(1.1);
+
+ }
+
+
+ .plan-heading {
+   font-size: 35px;
+ }
+
+ .plan-feature {
+   list-style: none;
+   padding: 0px;
+ }
+
+ /* :before, :hover, :after, @media, @import, @support */
+
+ .plan-feature li:before {
+   content: "✓";
+   margin-right: 16px;
+ }
+
+ .plan-feature li {
+   margin-bottom: 16px;
+   display: flex;
+   /* justify-content: space-evenly; */
+ }
+
+ .plan-choose {
+   width: 90%;
+   background: rgb(112, 184, 252);
+   border-radius: 8px;
+   border: none;
+   color: white;
+   font-size: 20px;
+   padding: 12px;
+   font-weight: bold;
+   margin-bottom: 10px;
+   margin-top: 50px;
+   cursor: pointer;
+ }
+a{
+  color: white;
+}
+
+ .plan-header {
+   display: flex;
+   justify-content: center;
+   padding-bottom: 20px;
+ }
+
+ .plan-options {
+   margin-left: 10%;
+   margin-right: 10%;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 3%;
+
+ }
+
+ /*  cal */
+
+ @media (min-width:1050px) and (max-width: 1280px) {
+   .plan-options {
+     gap: 2%;
+     margin: 10%
+   }
+ }
+
+ @media (min-width:843px) and (max-width: 1050px) {
+   .plan-options {
+     grid-template-columns: repeat(2, 1fr);
+     gap: 10%;
+     margin: 15%;
+   }
+ }
+
+ @media (min-width:320px) and (max-width: 843px) {
+   .plan-options {
+     grid-template-columns: 1fr;
+     margin: 15%;
+   }
+   .planning h1{
+     margin-top: 0;
+   }
+ }
+
+ @media (max-width: 576px) {
+   .plan-options {
+     grid-template-columns: 1fr;
+     margin-left: 38%;
+    
+   }
+   .plan{
+   margin-left: -40%;
+   padding: 20px;
+    width: 200%;
+   }
+   .plan-choose{
+     margin-top: 10px;
+   }
+   .plan-header{
+     padding: 0;
+   }
+   .planning h1{
+     margin-left: 33%;
+   }
+ }

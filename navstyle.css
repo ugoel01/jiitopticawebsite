@@ -1041,7 +1041,9 @@ box-shadow: 0 0 60px 2px #79b3eb, 0.5rem 0.5rem 30px #13092d;
     display: none;
   }
   .ReadMore{
-    margin-left: 30%;
+    margin-left: 50%;
+    width: 32%;
+    
   }
 }
 

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
 
+.toim{
+    margin-top: 100px;;
+}
+
 .main-team {
     height: 155vh;
     justify-content: center;
@@ -387,4 +391,22 @@ color the same as the container */
         margin-top: 0;
     }
 
+}
+
+@media (max-width: 1024px) {
+    .main-team{
+        height: 95vh;
+    }
+}
+
+@media (max-width: 450px) {
+    .main-team{
+        height: 250vh;
+    }
+}
+
+@media (max-width: 365px) {
+    .main-team{
+        height: 300vh;
+    }
 }

@@ -1,4 +1,5 @@
 #scroll {
+    z-index: 10000;
     position:fixed;
     right:10px;
     bottom:10px;

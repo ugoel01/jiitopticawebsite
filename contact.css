@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
-.newsletter {
+.newsletterr {
   background: #fff;
   padding: 3em 0;
-
+ margin-left: 15%;
+ width: 70%;
 	background: #CAD3DB;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 65vh;
+	height: 35vh;
 	font-family: 'Mulish', sans-serif;
 }
 
@@ -151,6 +152,12 @@ footer h1 span {
 
   footer h1:before {
     width: 50%;
+  }
+
+  .newsletterr{
+    height: 55vh;
+    width: 100%;
+    margin-left: 30%;
   }
 }
 

@@ -8,7 +8,7 @@
 
 @media screen and (max-width: 586px) {
   .newsletter {
-    width: 120% !important;
+    width: 100% !important;
   }
 
   .newsletter_body {
@@ -23,13 +23,14 @@
   padding: 3em 0;
   background: #cad3db;
   height: 100%;
-  width: 60%;
+  width: 70%;
   font-family: "Mulish", sans-serif;
+  border-radius: 10px;
 }
 
 .newsletter_body {
-  width: 50vw;
-  height: 572px;
+  width: 98vw;
+  height: 372px;
   display: flex;
   justify-content: center;
   align-items: center;

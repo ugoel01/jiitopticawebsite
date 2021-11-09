@@ -8,12 +8,12 @@
 
 @media screen and (max-width: 586px) {
   .newsletter {
-    width: 134% !important;
+    width: 120% !important;
   }
 
   .newsletter_body {
     margin-left: 35%;
-    width: 130vw !important;
+    width: 100vw !important;
   }
 }
 
@@ -28,7 +28,7 @@
 }
 
 .newsletter_body {
-  width: 100vw;
+  width: 50vw;
   height: 572px;
   display: flex;
   justify-content: center;

@@ -1,2 +1,2 @@
-# jiitosawebsite
-New website for jiit osa chapter.
+# jiitopticawebsite
+New website for jiit optica chapter.

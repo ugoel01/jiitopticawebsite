@@ -1,0 +1,49 @@
+/* width */
+::-webkit-scrollbar {
+    width: 18px;
+    cursor: pointer;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: white;
+}
+
+div::-webkit-scrollbar-track {
+    border-radius: 9px;
+    visibility: hidden;
+}
+
+/* Handle */
+div::-webkit-scrollbar-thumb {
+    visibility: hidden;
+}
+
+/* Handle on hover */
+div::-webkit-scrollbar-thumb:hover {
+    visibility: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+img:hover {
+    transition: 1s;
+    transform: scale(1.05);
+}

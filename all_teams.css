@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 
+
 .nav-link a {
   text-transform: lowercase;
 }
@@ -936,4 +937,9 @@ body::-webkit-scrollbar-thumb {
   background-color: darkgrey;
 
   border-radius: 20px;
+}
+
+#text_made_by{
+  font-family: "Roboto", sans-serif;
+
 }

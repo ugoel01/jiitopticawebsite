@@ -122,7 +122,8 @@ color the same as the container */
 }
 
 .imagebox img {
-    height: 100%;
+    padding: 2em;
+    height: 20em;
     width: 100%;
 
 }

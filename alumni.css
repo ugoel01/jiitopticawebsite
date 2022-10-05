@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap');
+
+/* font-family: 'Lora', serif;
+font-family: 'Montserrat', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.quote {
+    font-family: 'Lora', serif;
+    /* font-weight : bold; */
+    /* width: 50%; */
+    text-align: left;
+    margin-left: 100px;
+    font-size: 45px;
+}
+
+.container1 {
+    margin-top: 55px;
+    display: flex;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 100px;
+}
+
+.alumni_card {
+    border: 1px solid rgba(255, 255, 255, 0.396);
+    border-radius: 5px;
+    display: flex;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.042);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.social_logos {
+    margin: 9px auto;
+}
+
+p {
+    margin: 5px;
+    font-size: 13px;
+}
+
+h5 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 12px 0 0 5px;
+}
+
+.card_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.pfp {
+    width: 100px;
+    margin: 30px 12px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.text {
+    width: 56%;
+    margin-top: 14%;
+}

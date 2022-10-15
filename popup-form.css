@@ -1,0 +1,91 @@
+/* pop-up form */
+
+.popup{
+  background-color: #cad3db;
+  width: 65%;
+  position: fixed;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+  border-radius: 8px;
+  font-family: "Poppins",sans-serif;
+  display: none;
+  text-align: center;
+  box-shadow: 5px 5px 30px rgba(0,0,0,.2);
+  z-index: 900;
+}
+
+
+.subscribe-popup-middle{
+  padding: 10px 20%;
+  z-index: 1000;
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.subscribe-popup-lower{
+  height: 52px;
+
+}
+
+.popup h2{
+  margin-top: 10px;
+  font-size: 32px;
+  padding-right: 10px;
+}
+
+.popup button{
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px 10px auto;
+  background-color: transparent;
+  font-size: 30px;
+  color: black;
+  background: #ffffff;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.popup p{
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0;
+    line-height: 25px;
+    border-radius: 8px;
+}
+
+.popup-email{
+  text-align: center;
+
+}
+
+.popup-subscribe{
+    display: block;
+    width: 150px;
+    position: relative;
+    margin: 10px auto;
+    font-size: 17px;
+    text-align: center;
+    background-color: #007bff;
+    border-radius: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+
+@media (max-width: 1028px) {
+  .popup h2{
+    font-size: 20px;
+  }
+  .subscribe-popup-upper{
+    height: 40px;
+  }
+}

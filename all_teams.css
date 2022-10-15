@@ -421,6 +421,7 @@ a{
 }
 
 .userProfile__thumbnail {
+  border-radius: 50%;
   width: var(--userthumb, 75px);
   height: var(--userthumb, 75px);
   flex: 0 0 auto;

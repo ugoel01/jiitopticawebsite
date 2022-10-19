@@ -8,6 +8,11 @@ font-family: 'Montserrat', sans-serif; */
     color: white;
 }
 
+nav{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+}
+
 .quote {
     font-family: 'Lora', serif;
     /* font-weight : bold; */

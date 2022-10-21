@@ -47,3 +47,6 @@ img:hover {
     transition: 1s;
     transform: scale(1.05);
 }
+nav{
+    font-family : 'Montserrat', sans-serif;
+}

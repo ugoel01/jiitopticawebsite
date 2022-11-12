@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: rgba(23, 28, 40);
+}
+
+
+
+
+.row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+.row .col-md-2 .box {
+  width: 100%;
+  height: 160px;
+  border: 4px solid #ffffff;
+  margin-top: 0.7rem;
+}
+
+.row .col-md-2 .box-3 {
+  width: 100%;
+  height: 140px;
+  border: 4px solid #ffffff;
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+
+.row .col-md-2 .box-4 {
+  width: 100%;
+  height: 180px;
+  border: 4px solid #ffffff;
+  margin-top: 0.7rem;
+}
+
+.row .col-md-2 .box-2 {
+  width: 100%;
+  height: 230px;
+  border: 4px solid #ffffff;
+}
+
+.row .col-md-2 .box-2_1 {
+  width: 100%;
+  height: 230px;
+  border: 4px solid #ffffff;
+  margin-top: 0.7rem;
+}
+
+.row .col-md-4 .row .col-md-6 .box {
+  width: 100%;
+  height: 180px;
+  border: 4px solid #ffffff;
+  margin-top: 0.7rem;
+}
+
+.row .col-md-2 {
+  margin-right: -0.8rem;
+}
+
+.row .col-md-4 .box-1 {
+  width: 102%;
+  height: 376px;
+  border: 2px solid #ffffff;
+}
+
+.row .col-md-4 .row .col-md-6 {
+  padding: 0;
+}
+
+#row_2 {
+  padding-top: 8rem !important;
+}
+
+.row .col-md-2 .box-2_2 {
+  width: 100%;
+  height: 281px;
+  border: 4px solid #ffffff;
+  margin-top: 0.7rem;
+}
+
+.gal_2 .col-md-2 .box-4 {
+  width: 100%;
+  height: 140px;
+  border: 4px solid #ffffff;
+  margin-top: 0.7rem;
+}
+
+.gal_2 .col-md-2 .box-2 {
+  width: 100%;
+  height: 270px;
+  border: 4px solid #ffffff;
+}
+
+.gal_2 .col-md-4 .box-1 {
+  width: 102%;
+  height: 376px;
+  border: 2px solid #ffffff;
+  margin-top: -0.3rem;
+  padding-bottom: 0.8rem;
+}
+
+.col-md-8 {
+  width: 110%;
+  height: 376px;
+  border: 2px solid #ffffff;
+  margin-top: -0.3rem;
+  padding-bottom: 0.8rem;
+}
+
+
+.gal_2 .col-md-4 .row .col-md-6 .box {
+  width: 100%;
+  height: 184.8px;
+  border: 4px solid #ffffff;
+  margin-top: 0.7rem;
+}
+
+.content-section {
+  border: 1px solid rgb(47, 48, 53, 0.8);
+  overflow: auto;
+}
+@media only screen and (max-width: 998px) {
+  .itemabout{
+    display: none;
+  }
+
+}
+@media only screen and (max-width: 767px) {
+  #row_2 {
+    padding-top: 4rem !important;
+  }
+
+  .img.image_box {
+    height: 110%;
+    width: 95%;
+    margin-left: 3%;
+  }
+  .itemabout{
+    display: none;
+  }
+
+}
